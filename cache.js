@@ -231,7 +231,7 @@ OTHER DEALINGS IN THE SOFTWARE.
     Cache.prototype.setItem = function(key, value, options) {
         if (typeof options == "number") {
             options = {
-                expirationSliding : number
+                expirationSliding : options
             }
         }
         options = options || this.defaultOptions;
