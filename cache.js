@@ -179,6 +179,7 @@ OTHER DEALINGS IN THE SOFTWARE.
         }
         return returnVal;
     };
+    Cache.prototype.get = Cache.prototype.getItem;
 
     Cache._CacheItem = function(k, v, o) {
         if (!k) {
@@ -249,6 +250,7 @@ OTHER DEALINGS IN THE SOFTWARE.
             }, 0);
         }
     };
+    Cache.prototype.set = Cache.prototype.setItem;
 
     /**
      * Removes all items from the cache.
